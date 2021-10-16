@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Donor.Donor_Profile_Activity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="314dp"
+        android:background="@drawable/background01">
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="310dp"-->
+        <!--            android:scaleType="centerCrop"-->
+        <!--            android:src="@drawable/profilebg" />-->
+
+        <!--        <View-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:background="@drawable/bg_into_sreen" />-->
+
+        <!--        <io.alterac.blurkit.BlurLayout-->
+        <!--            android:id="@+id/blurLayout"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            app:blk_fps="0"-->
+
+        <!--            />-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/backbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/logo_back"
+            android:backgroundTint="@color/white"
+            android:padding="5dp"
+            android:src="@drawable/ic_arrow"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/backbtn"
+            android:gravity="center"
+            android:text="My Profile"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage"
+            android:layout_width="98dp"
+            android:layout_height="98dp"
+            android:layout_centerHorizontal="true"
+            android:elevation="15dp"
+            android:padding="5dp"
+            android:src="@drawable/profile"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profileImage"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="-40dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:elevation="100dp"
+                app:cardBackgroundColor="#070B17"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/usernameTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="Chathura Sanjaya"
+                        android:textColor="#FDC830"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/emailtv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:text="rrmchathura@gmail.com"
+                        android:textColor="#F37335"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/mobileTv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="mobile"
+                            android:textColor="@color/col_red"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#79D6D1D1" />
+
+
+                        <TextView
+                            android:id="@+id/bloodGroupTv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="AB+"
+                            android:textColor="@color/success"
+                            android:textSize="40sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#79D6D1D1" />
+
+                        <TextView
+                            android:id="@+id/userTypeTv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Type"
+                            android:textColor="@color/col_yellow"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/data">
+
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/updateProfileBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/bg_profile_edittext"
+                android:drawableEnd="@drawable/ic_email"
+                android:drawablePadding="10dp"
+                android:elevation="100dp"
+                android:fontFamily="sans-serif-black"
+                android:padding="10dp"
+                android:text="Update Profile"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

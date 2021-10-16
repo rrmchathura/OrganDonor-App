@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">OrganDonor-App</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    //Donor Register
+    <string name="intro">Donor Register</string>
+    <string name="donor_desc">Hello there, Sign up to continue!</string>
+    <string name="donor_register">Register</string>
+    <string name="donor_already_account">Do you have an account ?</string>
+    <string name="donor_sign_up">Sign In</string>
+
+
+    //Login Form
+    <string name="l_login">Login</string>
+    <string name="l_forgot">Forgot Password</string>
+    <string name="l_already_account">Don\'t have an account ?</string>
+    <string name="l_sign_up">Sign Up</string>
+    <string name="or">or</string>
+    <string name="remember">Remember</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_desc">Hello there, Welcome back to Organ Donor!</string>
 </resources>

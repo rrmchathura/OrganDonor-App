@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Donor.Donor_Update_Profile_Activity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/bg_simple" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_into_sreen" />
+
+    <View
+        android:id="@+id/ViewSupporter"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/backbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/logo_back"
+            android:backgroundTint="@color/white"
+            android:padding="5dp"
+            android:src="@drawable/ic_arrow"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/backbtn"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        tools:ignore="UselessParent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="45dp">
+
+                <TextView
+                    android:id="@+id/signuptxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:padding="5dp"
+                    android:text="Donor Update Profile"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+
+                <!--                <ImageView-->
+                <!--                    android:layout_width="50dp"-->
+                <!--                    android:layout_height="50dp"-->
+                <!--                    android:layout_alignEnd="@id/signuptxt"-->
+                <!--                    android:layout_marginRight="1dp"-->
+                <!--                    android:src="@drawable/logonew"/>-->
+
+                <TextView
+                    android:id="@+id/textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/signuptxt"
+                    android:layout_marginTop="-10dp"
+                    android:padding="5dp"
+                    android:text="Hello there,Update Profile"
+                    android:textColor="@color/hint_textcolor"
+                    android:textStyle="bold" />
+
+                <com.agrawalsuneet.dotsloader.loaders.LazyLoader
+                    android:id="@+id/loader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textview"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone"
+                    app:lazyloader_animDur="800"
+                    app:lazyloader_dotsDist="10dp"
+                    app:lazyloader_dotsRadius="10dp"
+                    app:lazyloader_firstDelayDur="150"
+                    app:lazyloader_firstDotColor="@color/col_red"
+                    app:lazyloader_interpolator="@android:anim/decelerate_interpolator"
+                    app:lazyloader_secondDelayDur="300"
+                    app:lazyloader_secondDotColor="@color/success"
+                    app:lazyloader_thirdDotColor="@color/col_yellow" />
+                <!--                <com.agrawalsuneet.dotsloader.loaders.LazyLoader-->
+                <!--                    android:visibility="gone"-->
+                <!--                    android:id="@+id/loader"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_below="@id/textview"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:layout_centerHorizontal="true"-->
+                <!--                    app:lazyloader_dotsRadius="7dp"-->
+                <!--                    app:lazyloader_animDur="800"-->
+                <!--                    app:lazyloader_dotsDist="10dp"-->
+                <!--                    app:lazyloader_firstDelayDur="150"-->
+                <!--                    app:lazyloader_firstDotColor="@color/col_red"-->
+                <!--                    app:lazyloader_interpolator="@android:anim/decelerate_interpolator"-->
+                <!--                    app:lazyloader_secondDelayDur="300"-->
+                <!--                    app:lazyloader_secondDotColor="@color/success"-->
+                <!--                    app:lazyloader_thirdDotColor="@color/col_yellow" />-->
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileimageview"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@id/loader"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="2dp" />
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/uploadimage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/profileimageview"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="-47dp"
+                    android:layout_marginRight="-153dp"
+                    android:layout_toLeftOf="@id/profileimageview"
+                    android:src="@drawable/plus"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="2dp" />
+
+
+                <EditText
+                    android:id="@+id/fullnameEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profileimageview"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/input_txt_bg_shape"
+                    android:ems="10"
+                    android:hint="Full Name"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:paddingStart="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+
+
+                <EditText
+                    android:id="@+id/phoneEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fullnameEt"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/input_txt_bg_shape"
+                    android:ems="10"
+                    android:hint="Mobile"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:padding="10dp"
+                    android:paddingStart="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+
+                <TextView
+                    android:id="@+id/selectBloodGroupEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/phoneEt"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/input_txt_bg_shape"
+                    android:backgroundTintMode="src_over"
+                    android:drawableRight="@drawable/ic_down"
+                    android:drawableTint="@color/white"
+                    android:ems="10"
+                    android:foregroundTint="@color/white"
+                    android:hint="Blood Group"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:paddingStart="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/btnUpdateProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/selectBloodGroupEt"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/bg_signup_btn"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Update Profile"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:gravity="bottom"
+    android:id="@+id/header"
+    android:orientation="vertical">
+
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="210dp"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        android:src="@mipmap/nav_header" />-->
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:background="@drawable/bg_into_sreen" />-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/people"
+
+                />
+
+            <TextView
+                android:id="@+id/nav_fullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Full name"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/nav_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="freesourcecodelk"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+
+                />
+
+            <TextView
+                android:id="@+id/nav_bloodGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BloodGroup"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+
+                />
+
+            <TextView
+                android:id="@+id/nav_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="type"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+
+
+                />
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="horizontal">-->
+            <!--                -->
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    -->
+            <!--                -->
+            <!--            </LinearLayout>-->
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

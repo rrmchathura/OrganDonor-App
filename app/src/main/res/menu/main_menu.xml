@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <group android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/nav_home"
+                android:title="Home" />
+            <item
+                android:id="@+id/nav_profile"
+                android:title="Profile" />
+
+            <item
+                android:id="@+id/nav_notifications"
+                android:title="Notification" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:title="Logout" />
+        </group>
+
+
+
+
+    <item android:title="Blood Groups">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_aPositive"
+                    android:title="A Positive" />
+
+                <item
+                    android:id="@+id/nav_aNegative"
+                    android:title="A Negative" />
+
+                <item
+                    android:id="@+id/nav_bPositive"
+                    android:title="B Positive" />
+
+                <item
+                    android:id="@+id/nav_bNegative"
+                    android:title="B Negative" />
+
+                <item
+                    android:id="@+id/nav_abPositive"
+                    android:title="AB Positive" />
+
+                <item
+                    android:id="@+id/nav_abNegative"
+                    android:title="AB Negative" />
+
+                <item
+                    android:id="@+id/nav_oPositive"
+                    android:title="O Positive" />
+
+                <item
+                    android:id="@+id/nav_oNegative"
+                    android:title="O Negative" />
+
+
+            </group>
+
+        </menu>
+
+    </item>
+
+
+    <item android:title="Communicate">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_about"
+                    android:title="About" />
+
+                <item
+                    android:id="@+id/nav_share"
+                    android:title="Share" />
+
+
+            </group>
+
+        </menu>
+
+    </item>
+
+</menu>

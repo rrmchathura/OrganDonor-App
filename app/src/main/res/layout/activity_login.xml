@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/test123" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_welcome_sreen" />
+
+    <View
+        android:id="@+id/ViewSupporter"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="190dp"
+                android:layout_marginEnd="45dp">
+
+                <TextView
+                    android:id="@+id/signuptxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:padding="5dp"
+                    android:text="@string/l_login"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+
+                <!--                <ImageView-->
+                <!--                    android:layout_width="50dp"-->
+                <!--                    android:layout_height="50dp"-->
+                <!--                    android:layout_alignEnd="@id/signuptxt"-->
+                <!--                    android:layout_marginRight="1dp"-->
+                <!--                    android:src="@drawable/logonew"/>-->
+
+                <TextView
+                    android:id="@+id/textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/signuptxt"
+                    android:layout_marginTop="-10dp"
+                    android:padding="5dp"
+                    android:text="@string/login_desc"
+                    android:textColor="@color/hint_textcolor"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/emailEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textview"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/input_txt_bg_shape"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:padding="10dp"
+                    android:paddingStart="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+
+                <EditText
+                    android:id="@+id/passwordEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/emailEt"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/input_txt_bg_shape"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:hint="Password"
+                    android:padding="10dp"
+                    android:paddingStart="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+
+
+                <CheckBox
+                    android:id="@+id/remember_Me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/passwordEt"
+                    android:buttonTint="#F37335"
+                    android:buttonTintMode="src_in"
+                    android:text="@string/remember"
+                    android:textColor="@color/white" />
+
+
+                <TextView
+                    android:id="@+id/btnlogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/remember_Me"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/bg_signup_btn"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/l_login"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/forgot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnlogin"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="@string/l_forgot"
+                    android:textColor="@color/terms" />
+
+
+                <LinearLayout
+                    android:id="@+id/already"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/forgot"
+                    android:layout_marginTop="30dp"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:text="@string/l_already_account" />
+
+                    <TextView
+                        android:id="@+id/signupBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:gravity="center"
+                        android:text="@string/l_sign_up"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/success" />
+
+                    <com.agrawalsuneet.dotsloader.loaders.LazyLoader
+                        android:visibility="invisible"
+                        android:id="@+id/loader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/already"
+                        app:lazyloader_animDur="800"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_gravity="center"
+                        app:lazyloader_dotsDist="10dp"
+                        app:lazyloader_dotsRadius="10dp"
+                        app:lazyloader_firstDelayDur="150"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        app:lazyloader_firstDotColor="@color/col_red"
+                        app:lazyloader_interpolator="@android:anim/decelerate_interpolator"
+                        app:lazyloader_secondDelayDur="300"
+                        app:lazyloader_secondDotColor="@color/success"
+                        app:lazyloader_thirdDotColor="@color/col_yellow" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
