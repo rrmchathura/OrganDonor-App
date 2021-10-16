@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "737997488087",
+    "firebase_url": "https://blood-donation-54455-default-rtdb.firebaseio.com",
+    "project_id": "blood-donation-54455",
+    "storage_bucket": "blood-donation-54455.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737997488087:android:146f6687a1542b11e89592",
+        "android_client_info": {
+          "package_name": "com.rrmchathura.blood_donation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "737997488087-jorii8m2us8m6qt9ol11id2vmvc9pvfr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfv7TGP1nhvDaB4TWYoBweW8F2vzHv5GM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "737997488087-jorii8m2us8m6qt9ol11id2vmvc9pvfr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737997488087:android:d6fb6bba1d7c12dde89592",
+        "android_client_info": {
+          "package_name": "com.rrmchathura.organdonor_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "737997488087-jorii8m2us8m6qt9ol11id2vmvc9pvfr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfv7TGP1nhvDaB4TWYoBweW8F2vzHv5GM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "737997488087-jorii8m2us8m6qt9ol11id2vmvc9pvfr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
